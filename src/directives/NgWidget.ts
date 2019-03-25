@@ -83,7 +83,7 @@ export class NgWidget implements OnInit, OnDestroy, DoCheck {
 		this.setConfig(v);
 
 		if (this._differ == null && v != null) {
-			this._differ = this._differs.find(this._config).create(null);
+			this._differ = this._differs.find(this._config).create();
 		}
 
 		if (!this._added) {

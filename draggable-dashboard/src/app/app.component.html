@@ -15,7 +15,7 @@
     </div>
 </nav> -->
 <div class="widget-container">
-    <md-toolbar class="navbar-default">
+    <mat-toolbar class="navbar-default">
         <div>Company Name</div>
         <div class="row navbar-default navbar-brand pull-right centre-content ">
             <div class="col-xs-3 ">Some Label</div>
@@ -26,7 +26,7 @@
         <div>
             <a (click)="addWidget() " class="btn btn-primary pull-right navbar-btn " style='margin-right: 10px;'>Add Widget</a>
         </div>
-    </md-toolbar>
+    </mat-toolbar>
     <!-- <div [ngWidgetContainer]="widgetContainerConfig "> -->
     <div [ngWidgetContainer]="(dashboardconfig$ | async)?.WidgetContainer ">
         <!-- <div *ngFor="let widgetmetadata of widgetsMetaData; let i=index " [(ngWidget)]="widgetmetadata.config " (onItemChange)="updateItem(i, $event) " (onResize)="onResize(i, $event) " (onDrag)="onDrag(i, $event) "> -->
